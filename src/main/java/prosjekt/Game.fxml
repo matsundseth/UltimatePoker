@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="752.0" prefWidth="944.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="prosjekt.GameController">
+   <children>
+      <ImageView fx:id="pHand1" fitHeight="217.0" fitWidth="128.0" layoutX="348.0" layoutY="488.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="pHand2" fitHeight="217.0" fitWidth="128.0" layoutX="520.0" layoutY="488.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="dHand1" fitHeight="217.0" fitWidth="128.0" layoutX="348.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="dHand2" fitHeight="217.0" fitWidth="128.0" layoutX="520.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true" />
+      <TextArea fx:id="balance" layoutX="98.0" layoutY="587.0" prefHeight="66.0" prefWidth="124.0" />
+      <Button fx:id="betButton" layoutX="244.0" layoutY="672.0" mnemonicParsing="false" onAction="#bet" text="Bet blind" />
+      <TextField fx:id="betInput" layoutX="62.0" layoutY="671.0" prefHeight="25.0" prefWidth="167.0" />
+      <ImageView fx:id="turn" fitHeight="217.0" fitWidth="128.0" layoutX="225.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="flop3" fitHeight="217.0" fitWidth="128.0" layoutX="400.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="flop1" fitHeight="217.0" fitWidth="128.0" layoutX="750.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="flop2" fitHeight="217.0" fitWidth="128.0" layoutX="575.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="river" fitHeight="217.0" fitWidth="128.0" layoutX="50.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="1.0" layoutY="610.0" text="Chips balance:" />
+      <Button fx:id="foldButton" layoutX="826.0" layoutY="640.0" mnemonicParsing="false" onAction="#fold" text="Fold" />
+      <Button fx:id="checkButton" layoutX="810.0" layoutY="597.0" mnemonicParsing="false" onAction="#check" text="Check" />
+      <Button fx:id="betButton2" layoutX="244.0" layoutY="627.0" mnemonicParsing="false" onAction="#bet2" text="Bet 4x Ante" />
+      <TextArea fx:id="finishOutput" layoutX="728.0" layoutY="15.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button fx:id="loadButton" layoutX="98.0" layoutY="541.0" mnemonicParsing="false" onAction="#loadBalance" text="Load" />
+      <Button fx:id="saveButton" layoutX="160.0" layoutY="541.0" mnemonicParsing="false" onAction="#saveBalance" text="Save" />
+   </children>
+</AnchorPane>
